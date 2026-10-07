@@ -3,218 +3,986 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Mythili L — Aspiring Software Engineer | AI & Full Stack Developer</title>
-<meta name="description" content="Mythili L — Computer Science Engineering student focused on Generative AI, Prompt Engineering and Full Stack Development.">
-<link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<title>Mythili L — Computer Science Engineering Student | AI & Full Stack Developer</title>
+<meta name="description" content="Mythili L — Computer Science Engineering student at Agni College of Technology, Chennai. Specializing in C, C++, Python, Data Analytics & Full Stack Development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#12040a;--tx:#fff3f5;--mu:#c9a2ab;--r:#ff3b4a;--p:#ff7aa8;--bd:rgba(255,255,255,.13);--gl:rgba(255,255,255,.06);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{
+  --bg:#07080a;
+  --bg-subtle:#0e1015;
+  --tx:#f8fafc;
+  --mu:#94a3b8;
+  --lime:#a3e635;
+  --lime-glow:rgba(163,230,53,.25);
+  --bd:rgba(255,255,255,.08);
+  --gl:rgba(14,16,21,.78);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px)
+}
 *,*::before,*::after{box-sizing:inherit}
-html{scroll-behavior:smooth;scroll-padding-top:80px;background:var(--bg)}
-body{margin:0;color:var(--tx);font:300 16px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden;background:radial-gradient(50% 40% at 90% 30%,rgba(255,59,74,.16),transparent 70%),radial-gradient(45% 35% at 5% 75%,rgba(255,122,168,.12),transparent 70%),var(--bg)}
-h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px;background:var(--bg)}
+body{
+  margin:0;
+  color:var(--tx);
+  font:300 16px/1.68 'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+  overflow-x:hidden;
+  background-color:var(--bg);
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(163,230,53,.08), transparent 60%),
+    radial-gradient(circle at 85% 30%, rgba(255,255,255,.02), transparent 60%),
+    radial-gradient(circle at 15% 80%, rgba(163,230,53,.04), transparent 60%),
+    radial-gradient(rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 36px 36px;
+}
+h1,h2,h3,h4{font-family:'Syne','Space Grotesk','Plus Jakarta Sans',sans-serif;margin:0}
 a{color:inherit;text-decoration:none}
-nav{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:50;display:flex;gap:2px;padding:6px;border-radius:99px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(18px);box-shadow:0 8px 30px rgba(0,0,0,.2)}
-nav a{padding:9px 16px;border-radius:99px;font:500 12px 'Space Grotesk';letter-spacing:.14em;text-transform:uppercase;transition:.3s;white-space:nowrap}
-nav a:hover{background:rgba(255,255,255,.18)}nav a.on{background:#fff;color:#c4132a}
-#home{position:relative;height:100vh;height:100svh;min-height:560px;overflow:hidden;isolation:isolate;background:#3a0407;--lx:56%;--ly:35%}
+
+/* Premium Floating Capsule Navbar */
+nav{
+  position:fixed;
+  top:calc(16px + env(safe-area-inset-top,0px));
+  left:50%;
+  transform:translateX(-50%);
+  z-index:50;
+  display:flex;
+  gap:4px;
+  padding:6px;
+  border-radius:99px;
+  background:rgba(14,16,21,.88);
+  border:1px solid rgba(255,255,255,.12);
+  backdrop-filter:blur(24px);
+  -webkit-backdrop-filter:blur(24px);
+  box-shadow:0 16px 45px rgba(0,0,0,.75), inset 0 1px 0 rgba(255,255,255,.1);
+}
+nav a{
+  padding:9px 20px;
+  border-radius:99px;
+  font:600 12px 'Space Grotesk',sans-serif;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#94a3b8;
+  transition:all .3s cubic-bezier(.16,1,.3,1);
+  white-space:nowrap;
+}
+nav a:hover{
+  color:#f8fafc;
+  background:rgba(255,255,255,.08);
+}
+nav a.on{
+  background:#a3e635;
+  color:#060709;
+  font-weight:700;
+  box-shadow:0 4px 22px rgba(163,230,53,.42);
+}
+
+/* Hero Section */
+#home{
+  position:relative;
+  height:100vh;
+  height:100svh;
+  min-height:640px;
+  overflow:hidden;
+  isolation:isolate;
+  background:#07080a;
+  --lx:56%;
+  --ly:35%;
+}
 #home>*{position:absolute}
-.bg{inset:-4%;z-index:0;will-change:transform;background:radial-gradient(36% 56% at 56% 36%,rgba(255,128,72,.78),rgba(255,64,48,.34) 46%,transparent 74%),radial-gradient(42% 52% at 94% 6%,rgba(255,104,136,.5),transparent 70%),radial-gradient(70% 60% at 0% 100%,rgba(28,0,4,.9),transparent 70%),linear-gradient(120deg,#5e0508 0%,#a90e13 42%,#d2271c 74%,#e6463a 100%)}
-.tex{inset:0;z-index:1;opacity:.55;mix-blend-mode:overlay;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='2400' height='1500'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.0032 .0055' numOctaves='5' seed='7'/><feColorMatrix type='saturate' values='0'/><feComponentTransfer><feFuncR type='linear' slope='1.7' intercept='-.32'/><feFuncG type='linear' slope='1.7' intercept='-.32'/><feFuncB type='linear' slope='1.7' intercept='-.32'/></feComponentTransfer></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>") center/cover no-repeat}
-.grain{inset:0;z-index:8;pointer-events:none;opacity:.16;mix-blend-mode:overlay;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23g)'/></svg>")}
-canvas.pc{inset:0;width:100%;height:100%;pointer-events:none}#c1{z-index:2}#c2{z-index:4;filter:blur(3px);mix-blend-mode:screen}
-.lite{inset:0;z-index:4;pointer-events:none;mix-blend-mode:soft-light;background:radial-gradient(460px circle at var(--lx) var(--ly),rgba(255,214,170,.36),transparent 66%)}
-.vig{inset:0;z-index:4;pointer-events:none;background:linear-gradient(0deg,rgba(30,0,5,.85),rgba(30,0,5,.3) 22%,transparent 44%),radial-gradient(125% 100% at 56% 38%,transparent 48%,rgba(26,0,4,.72))}
-.copy{z-index:6;left:6vw;bottom:9vh;max-width:min(470px,46vw)}
-.hi{font:500 15px 'Space Grotesk';letter-spacing:.32em;text-transform:uppercase;opacity:.92}
-.name{font:400 clamp(72px,10.5vw,158px)/.9 Yellowtail,cursive;margin:4px 0 14px;text-shadow:0 8px 34px rgba(60,0,8,.5)}
-.sub{font:500 12px/1.5 'Space Grotesk';letter-spacing:.24em;text-transform:uppercase;min-height:1.5em;color:#ffd2bd}
-.sub::after{content:"|";margin-left:2px;animation:bl 1s steps(1) infinite}@keyframes bl{50%{opacity:0}}
-.tag{margin:10px 0 24px;font-size:15px;color:#ffe9e2;max-width:380px;text-shadow:0 2px 14px rgba(40,0,6,.6)}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:13px 28px;border-radius:99px;font:700 12px 'Space Grotesk';letter-spacing:.16em;text-transform:uppercase;cursor:pointer;border:1.5px solid rgba(255,255,255,.7);color:#fff;background:rgba(255,255,255,.08);backdrop-filter:blur(8px);transition:.3s}
-.btn.w{background:#fff;color:#b80f22;border-color:#fff}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(60,0,14,.4)}
-.btn.g{background:linear-gradient(120deg,var(--r),var(--p));border:0;color:#fff}
-.cw{z-index:3;bottom:0;left:56%;transform:translateX(-50%);height:100%;aspect-ratio:250/223;filter:drop-shadow(0 0 42px rgba(255,104,60,.3)) drop-shadow(0 30px 40px rgba(36,0,6,.5));-webkit-mask-image:linear-gradient(#000 80%,transparent);mask-image:linear-gradient(#000 86%,transparent)}
+.bg{
+  inset:-5%;
+  z-index:0;
+  will-change:transform;
+  background:
+    radial-gradient(50% 60% at var(--lx) var(--ly),rgba(163,230,53,.15),transparent 70%),
+    radial-gradient(45% 55% at 65% 38%,rgba(255,255,255,.04),transparent 75%),
+    radial-gradient(80% 80% at 50% 50%,#0e1015 0%,#07080a 100%);
+}
+.tex{
+  inset:0;
+  z-index:1;
+  opacity:.32;
+  mix-blend-mode:overlay;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='2400' height='1500'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.0032 .0055' numOctaves='5' seed='7'/><feColorMatrix type='saturate' values='0'/><feComponentTransfer><feFuncR type='linear' slope='1.5' intercept='-.25'/><feFuncG type='linear' slope='1.5' intercept='-.25'/><feFuncB type='linear' slope='1.5' intercept='-.25'/></feComponentTransfer></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>") center/cover no-repeat;
+}
+.grain{
+  inset:0;
+  z-index:8;
+  pointer-events:none;
+  opacity:.14;
+  mix-blend-mode:overlay;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23g)'/></svg>");
+}
+canvas.pc{inset:0;width:100%;height:100%;pointer-events:none}
+#c1{z-index:2}
+#c2{z-index:4;filter:blur(3px);mix-blend-mode:screen}
+.lite{
+  inset:0;
+  z-index:4;
+  pointer-events:none;
+  mix-blend-mode:screen;
+  background:radial-gradient(600px circle at var(--lx) var(--ly),rgba(163,230,53,.12),transparent 70%);
+}
+.vig{
+  inset:0;
+  z-index:4;
+  pointer-events:none;
+  background:
+    linear-gradient(0deg,rgba(7,8,10,.96) 0%,rgba(7,8,10,.35) 25%,transparent 50%),
+    radial-gradient(130% 100% at 50% 40%,transparent 45%,rgba(4,5,7,.88) 100%);
+}
+.copy{
+  z-index:6;
+  left:7vw;
+  bottom:11vh;
+  max-width:min(640px,52vw);
+}
+.hi{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font:600 13px 'Space Grotesk',sans-serif;
+  letter-spacing:.32em;
+  text-transform:uppercase;
+  color:#a3e635;
+  opacity:.95;
+  margin-bottom:6px;
+}
+.name{
+  font:800 clamp(48px,7.8vw,116px)/1.02 'Syne',sans-serif;
+  letter-spacing:-.01em;
+  margin:6px 0 16px;
+  background:linear-gradient(135deg,#ffffff 0%,#e2e8f0 55%,#a3e635 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  filter:drop-shadow(0 12px 35px rgba(0,0,0,.8));
+  white-space:nowrap;
+  display:inline-block;
+  padding-right:.18em;
+}
+.sub{
+  font:600 13px/1.5 'Space Grotesk',sans-serif;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  min-height:1.5em;
+  color:#94a3b8;
+}
+.sub::after{
+  content:"|";
+  margin-left:2px;
+  color:#a3e635;
+  animation:bl 1s steps(1) infinite;
+}
+@keyframes bl{50%{opacity:0}}
+.tag{
+  margin:16px 0 30px;
+  font-size:16.5px;
+  line-height:1.65;
+  color:#cbd5e1;
+  max-width:460px;
+  text-shadow:0 2px 12px rgba(0,0,0,.7);
+}
+.cta{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+/* Premium Buttons */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 32px;
+  border-radius:99px;
+  font:700 12px 'Space Grotesk',sans-serif;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  cursor:pointer;
+  border:1px solid rgba(255,255,255,.14);
+  color:#f8fafc;
+  background:rgba(255,255,255,.04);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  transition:all .35s cubic-bezier(.16,1,.3,1);
+  box-shadow:0 4px 22px rgba(0,0,0,.3);
+}
+.btn:hover{
+  transform:translateY(-3px);
+  background:rgba(255,255,255,.08);
+  border-color:rgba(163,230,53,.5);
+  box-shadow:0 12px 32px rgba(0,0,0,.5), 0 0 24px rgba(163,230,53,.2);
+  color:#a3e635;
+}
+.btn.w{
+  background:#a3e635;
+  color:#060709;
+  border:none;
+  font-weight:700;
+  box-shadow:0 6px 26px rgba(163,230,53,.38);
+}
+.btn.w:hover{
+  transform:translateY(-3px) scale(1.02);
+  box-shadow:0 14px 38px rgba(163,230,53,.52);
+  color:#000;
+}
+.btn.g{
+  background:#a3e635;
+  border:0;
+  color:#060709;
+  font-weight:700;
+}
+.btn.g:hover{
+  box-shadow:0 12px 32px rgba(163,230,53,.45);
+}
+
+/* Single Realistic AI Avatar Presentation */
+.cw{
+  z-index:3;
+  bottom:0;
+  left:60%;
+  transform:translateX(-50%);
+  height:93%;
+  max-height:920px;
+  aspect-ratio:250/223;
+  filter:
+    drop-shadow(0 0 70px rgba(163,230,53,.18)) 
+    drop-shadow(0 35px 70px rgba(0,0,0,.95));
+  -webkit-mask-image:linear-gradient(#000 88%,transparent 100%);
+  mask-image:linear-gradient(#000 88%,transparent 100%);
+  transition:filter .5s ease;
+  animation:avatar-float 6s ease-in-out infinite;
+}
+
+@keyframes avatar-float{
+  0%,100%{transform:translateX(-50%) translateY(0px)}
+  50%{transform:translateX(-50%) translateY(-10px)}
+}
+
+.cw::before{
+  content:'';
+  position:absolute;
+  bottom:-4%;
+  left:50%;
+  transform:translateX(-50%);
+  width:85%;
+  height:120px;
+  border-radius:50%;
+  background:radial-gradient(ellipse at center, rgba(163,230,53,.2) 0%, rgba(255,255,255,.05) 45%, transparent 75%);
+  filter:blur(24px);
+  pointer-events:none;
+  z-index:-1;
+}
+
+.cw::after{
+  content:'';
+  position:absolute;
+  bottom:-2%;
+  left:50%;
+  transform:translateX(-50%);
+  width:70%;
+  height:35px;
+  border-radius:50%;
+  background:radial-gradient(ellipse at center, rgba(0,0,0,.9) 0%, transparent 75%);
+  filter:blur(10px);
+  pointer-events:none;
+  z-index:-1;
+}
+
 .char{position:relative;width:100%;height:100%}
-.char>img,.head>img.f{position:absolute;inset:0;width:100%;height:100%;display:block;user-select:none;-webkit-user-drag:none}
-.head{position:absolute;inset:0;transform-origin:50% 62%;will-change:transform;-webkit-mask-image:linear-gradient(#000 55%,transparent 80%);mask-image:linear-gradient(#000 55%,transparent 80%)}
-.eye{position:absolute;width:8.4%;height:5.83%;top:29.37%;overflow:hidden;-webkit-mask-image:radial-gradient(closest-side,#000 55%,transparent 100%);mask-image:radial-gradient(closest-side,#000 55%,transparent 100%)}
-.eye.l{left:37.8%}.eye.r{left:53.6%}
-.eye img{position:absolute;width:1190.476%;height:1715.38%;max-width:none;top:-503.846%;transform:translate(var(--x,0px),var(--y,0px))}
-.eye.l img{left:-450%}.eye.r img{left:-638.095%}
-.lid{position:absolute;inset:-8% -5%;background:linear-gradient(180deg,#6f4a39,#b08166);transform:scaleY(0);transform-origin:top;transition:transform .09s ease-in}
-.eye.b .lid{transform:scaleY(1)}
-section.s{padding:110px 6vw;max-width:1200px;margin:auto}
-.eb{color:var(--p);font:500 12px 'Space Grotesk';letter-spacing:.24em;text-transform:uppercase}
-h2{font-size:clamp(30px,4.4vw,50px);margin:10px 0 38px}
-.gr{background:linear-gradient(100deg,var(--r),var(--p));-webkit-background-clip:text;background-clip:text;color:transparent}
-.glass{background:var(--gl);border:1px solid var(--bd);border-radius:24px;backdrop-filter:blur(18px);padding:30px;transition:transform .25s,border-color .3s,box-shadow .3s}
-.glass:hover{border-color:rgba(255,122,168,.55);box-shadow:0 0 44px rgba(255,59,74,.16)}
-.about{display:grid;grid-template-columns:1.3fr 1fr;gap:22px}.about p{color:var(--mu);margin:0 0 14px}
-.focus{display:grid;gap:14px}.focus div{padding:16px 18px;border-radius:16px;background:var(--gl);border-left:3px solid var(--r);font:500 18px 'Space Grotesk'}.focus div:nth-child(2){border-color:var(--p)}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}.skills h3{font-size:18px;margin-bottom:14px;color:var(--p)}
-.chip{display:inline-block;margin:0 6px 8px 0;padding:6px 13px;border-radius:99px;font-size:13px;background:var(--gl);border:1px solid var(--bd)}
-.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px}.proj .glass{display:flex;flex-direction:column;gap:12px}
-.n{font:700 13px 'Space Grotesk';color:var(--r);letter-spacing:.2em}.proj h3{font-size:22px}.proj p{margin:0;color:var(--mu);font-size:15px}.proj div{margin-top:auto;padding-top:6px}.proj .chip{font-size:12px;padding:5px 11px}
-.term{padding:0;overflow:hidden;background:rgba(20,5,12,.75)}
-.th{display:flex;align-items:center;gap:7px;padding:12px 16px;border-bottom:1px solid var(--bd);font:12px 'Space Grotesk';color:var(--mu)}
-.th i{width:10px;height:10px;border-radius:50%;background:var(--r)}.th i:nth-child(2){background:var(--p)}.th i:nth-child(3){background:#fff4}.th span{margin-left:8px}
-.log{height:290px;overflow-y:auto;padding:18px;font:14px/1.7 ui-monospace,Menlo,monospace;scrollbar-width:thin}.log p{margin:0 0 12px;white-space:pre-wrap}.log .u{color:var(--p)}
-.qs{display:flex;gap:8px;flex-wrap:wrap;padding:0 18px 14px}.qs button{font:inherit;font-size:13px;padding:7px 13px;border-radius:99px;border:1px solid var(--bd);background:var(--gl);color:var(--tx);cursor:pointer;transition:.25s}.qs button:hover{border-color:var(--p);transform:translateY(-2px);box-shadow:0 0 18px rgba(255,59,74,.3)}
-#qf{display:flex;align-items:center;gap:10px;padding:0 18px 18px}#qf span{color:var(--p);font:700 16px monospace}
-input,textarea{width:100%;padding:14px 16px;border-radius:14px;border:1px solid var(--bd);background:rgba(255,255,255,.05);color:var(--tx);font:inherit;outline:none;transition:.3s}input:focus,textarea:focus{border-color:var(--p);box-shadow:0 0 0 3px rgba(255,122,168,.18)}
-.contact{max-width:640px;margin:auto;text-align:center}.contact form{display:grid;gap:14px;text-align:left}#note{font-size:14px;color:var(--mu);min-height:1.4em;margin:4px 0 0}
-footer{text-align:center;padding:40px 5vw;color:var(--mu);font-size:13px;border-top:1px solid var(--bd)}
-.rv{opacity:0;transform:translateY(34px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+.head{
+  position:absolute;
+  inset:0;
+  transform-origin:50% 62%;
+  will-change:transform;
+}
+.avatar-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+  display:block;
+  user-select:none;
+  -webkit-user-drag:none;
+  border-radius:24px;
+}
+
+/* Sections & Glass Cards */
+section.s{
+  padding:135px 6vw;
+  max-width:1200px;
+  margin:auto;
+  position:relative;
+}
+.eb{
+  color:#a3e635;
+  font:600 12px 'Space Grotesk',sans-serif;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  display:inline-block;
+  margin-bottom:8px;
+}
+h2{
+  font:700 clamp(34px,4.6vw,56px)/1.15 'Syne',sans-serif;
+  letter-spacing:-.025em;
+  margin:6px 0 44px;
+  color:#f8fafc;
+}
+.gr{
+  background:linear-gradient(135deg,#ffffff 0%,#cbd5e1 50%,#a3e635 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.glass{
+  position:relative;
+  background:linear-gradient(145deg,rgba(16,18,24,.82) 0%,rgba(10,12,16,.9) 100%);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:24px;
+  backdrop-filter:blur(24px);
+  -webkit-backdrop-filter:blur(24px);
+  padding:36px;
+  transition:transform .35s cubic-bezier(.16,1,.3,1),border-color .35s ease,box-shadow .35s ease;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 18px 45px rgba(0,0,0,.45);
+  overflow:hidden;
+}
+.glass::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:2px;
+  background:linear-gradient(90deg,transparent,rgba(163,230,53,.4),transparent);
+  opacity:0;
+  transition:opacity .35s ease;
+}
+.glass:hover::before{opacity:1}
+.glass:hover{
+  border-color:rgba(163,230,53,.35);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12), 0 0 38px rgba(163,230,53,.12), 0 22px 50px rgba(0,0,0,.55);
+}
+
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:26px}
+.about p{color:#cbd5e1;font-size:16.5px;line-height:1.75;margin:0 0 18px}
+.about p:last-child{margin:0}
+
+.focus{display:grid;gap:18px}
+.focus div{
+  padding:22px 24px;
+  border-radius:20px;
+  background:rgba(16,18,24,.6);
+  border:1px solid rgba(255,255,255,.08);
+  border-left:4px solid #a3e635;
+  font:600 17.5px 'Space Grotesk',sans-serif;
+  color:#f8fafc;
+  transition:all .3s ease;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.05);
+}
+.focus div:nth-child(2){border-left-color:#64748b}
+.focus div:nth-child(3){border-left-color:#a3e635}
+.focus div:hover{
+  transform:translateX(8px);
+  background:rgba(163,230,53,.06);
+  border-color:rgba(163,230,53,.3);
+}
+
+/* Category-Based CSE & Full Stack Skills Section */
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+  gap:28px;
+}
+.skill-card{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+.skill-card.learning{
+  background:linear-gradient(145deg,rgba(18,21,28,.88) 0%,rgba(12,14,19,.94) 100%);
+  border-color:rgba(255,255,255,.12);
+}
+.skill-card-head{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.skill-icon-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  background:rgba(163,230,53,.1);
+  border:1px solid rgba(163,230,53,.25);
+  color:#a3e635;
+  font-size:18px;
+}
+.skill-card.learning .skill-icon-badge{
+  background:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.2);
+  color:#cbd5e1;
+}
+.skill-card h3{
+  font:600 21px 'Syne',sans-serif;
+  color:#f8fafc;
+}
+.tech-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.tech-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 16px;
+  border-radius:99px;
+  font:500 13.5px 'Space Grotesk',sans-serif;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.12);
+  color:#cbd5e1;
+  transition:all .28s cubic-bezier(.16,1,.3,1);
+}
+.tech-badge:hover{
+  background:rgba(163,230,53,.12);
+  border-color:#a3e635;
+  color:#a3e635;
+  transform:translateY(-2px);
+  box-shadow:0 4px 16px rgba(163,230,53,.2);
+}
+.learning-badge{
+  background:rgba(255,255,255,.04);
+  border-color:rgba(255,255,255,.15);
+  color:#94a3b8;
+}
+.learning-badge:hover{
+  background:rgba(163,230,53,.12);
+  border-color:#a3e635;
+  color:#a3e635;
+  box-shadow:0 4px 16px rgba(163,230,53,.2);
+}
+
+/* Projects Showcase - Sophisticated Dark Layout with Lime Highlights */
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:28px}
+.proj .glass{display:flex;flex-direction:column;gap:16px}
+.proj-head{display:flex;align-items:center;justify-content:space-between}
+.n{font:700 13px 'Space Grotesk',sans-serif;color:#a3e635;letter-spacing:.24em}
+.proj h3{font:700 24px 'Syne',sans-serif;color:#f8fafc}
+.proj p{margin:0;color:#94a3b8;font-size:15px;line-height:1.65}
+.proj-links{display:flex;gap:12px;margin-top:auto;padding-top:14px}
+.proj-link{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:8px 16px;
+  border-radius:99px;
+  font:600 12px 'Space Grotesk',sans-serif;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.12);
+  color:#f8fafc;
+  transition:all .25s ease;
+}
+.proj-link:hover{
+  background:rgba(163,230,53,.15);
+  border-color:rgba(163,230,53,.4);
+  color:#a3e635;
+  transform:translateY(-2px);
+}
+
+/* Reusable Chip */
+.chip{
+  display:inline-flex;
+  align-items:center;
+  padding:4px 12px;
+  border-radius:99px;
+  font:600 11px 'Space Grotesk',sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.12);
+  color:#94a3b8;
+  margin-right:6px;
+}
+
+/* Experience & Certifications Grid */
+.grid-2col{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:26px}
+.cert-card{display:flex;flex-direction:column;gap:12px}
+.cert-card h3{font:600 20px 'Syne',sans-serif;color:#f8fafc}
+.cert-card .meta{font:600 13px 'Space Grotesk',sans-serif;color:#a3e635}
+.cert-card p{color:#cbd5e1;font-size:14.5px;margin:0}
+
+/* AI Terminal Console */
+.term{
+  padding:0;
+  overflow:hidden;
+  background:rgba(10,12,16,.94);
+  border:1px solid rgba(255,255,255,.1);
+  box-shadow:0 24px 60px rgba(0,0,0,.75);
+}
+.th{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:16px 22px;
+  background:rgba(16,18,24,.95);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  font:500 13px 'Space Grotesk',sans-serif;
+  color:#94a3b8;
+}
+.th i{width:11px;height:11px;border-radius:50%;background:#475569}
+.th i:nth-child(2){background:#64748b}
+.th i:nth-child(3){background:#a3e635}
+.th span{margin-left:8px;color:#cbd5e1}
+.log{
+  height:310px;
+  overflow-y:auto;
+  padding:24px;
+  font:14px/1.7 'Space Grotesk',ui-monospace,Menlo,monospace;
+  scrollbar-width:thin;
+  color:#cbd5e1;
+}
+.log p{margin:0 0 14px;white-space:pre-wrap}
+.log .u{color:#a3e635;font-weight:600}
+
+.qs{display:flex;gap:10px;flex-wrap:wrap;padding:0 24px 18px}
+.qs button{
+  font:500 13px 'Space Grotesk',sans-serif;
+  padding:8px 18px;
+  border-radius:99px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.04);
+  color:#cbd5e1;
+  cursor:pointer;
+  transition:all .28s ease;
+}
+.qs button:hover{
+  border-color:#a3e635;
+  background:rgba(163,230,53,.15);
+  color:#a3e635;
+  transform:translateY(-2px);
+  box-shadow:0 4px 18px rgba(163,230,53,.22);
+}
+#qf{display:flex;align-items:center;gap:12px;padding:0 24px 24px}
+#qf span{color:#a3e635;font:700 18px monospace}
+
+input,textarea{
+  width:100%;
+  padding:16px 20px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.1);
+  background:rgba(14,16,21,.6);
+  color:#f8fafc;
+  font:inherit;
+  outline:none;
+  transition:all .3s ease;
+}
+input:focus,textarea:focus{
+  border-color:#a3e635;
+  background:rgba(14,16,21,.9);
+  box-shadow:0 0 0 3px rgba(163,230,53,.22);
+}
+
+.contact{max-width:680px;margin:auto;text-align:center}
+.contact form{display:grid;gap:18px;text-align:left}
+#note{font-size:14px;color:#94a3b8;min-height:1.4em;margin:6px 0 0}
+footer{
+  text-align:center;
+  padding:52px 5vw;
+  color:#64748b;
+  font-size:14px;
+  border-top:1px solid rgba(255,255,255,.08);
+  background:#040507;
+}
+
+.rv{
+  opacity:0;
+  transform:translateY(36px);
+  transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);
+}
+.rv.in{opacity:1;transform:none}
+
 @media(max-width:820px){
- nav a{padding:8px 10px;font-size:10px;letter-spacing:.08em}
- .copy{left:0;right:0;bottom:5svh;max-width:none;text-align:center;padding:0 6vw}.tag{margin:8px auto 18px;font-size:14px}.cta{justify-content:center}
- .name{font-size:clamp(68px,23vw,120px)}
- .cw{left:50%;top:64px;bottom:auto;height:66svh}.vig{background:linear-gradient(0deg,rgba(30,0,5,.95),rgba(30,0,5,.6) 32%,transparent 58%),radial-gradient(130% 90% at 50% 34%,transparent 50%,rgba(26,0,4,.7))}
- .about{grid-template-columns:1fr}section.s{padding:80px 6vw}}
-@media(max-width:820px) and (max-height:720px){.tag{display:none}.cw{height:58svh}}
+ nav a{padding:8px 12px;font-size:11px;letter-spacing:.08em}
+ .copy{left:0;right:0;bottom:5svh;max-width:none;text-align:center;padding:0 6vw}
+ .tag{margin:10px auto 24px;font-size:15px}
+ .cta{justify-content:center}
+ .name{font-size:clamp(34px,9.8vw,74px);white-space:nowrap;padding-right:.18em}
+ .cw{left:50%;top:60px;bottom:auto;height:64svh}
+ .vig{background:linear-gradient(0deg,rgba(7,8,10,.98) 0%,rgba(7,8,10,.6) 35%,transparent 60%),radial-gradient(130% 90% at 50% 34%,transparent 45%,rgba(4,5,7,.85))}
+ .about{grid-template-columns:1fr}
+ section.s{padding:90px 6vw}
+}
+@media(max-width:820px) and (max-height:720px){.tag{display:none}.cw{height:56svh}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<nav><a href="#projects">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#ask">Ask AI</a><a href="#contact">Contact</a></nav>
+<nav>
+ <a href="#about">About</a>
+ <a href="#education">Education</a>
+ <a href="#skills">Skills</a>
+ <a href="#certifications">Certifications</a>
+ <a href="#projects">Projects</a>
+ <a href="#ask">Ask AI</a>
+ <a href="#contact">Contact</a>
+</nav>
 
 <header id="home">
  <div class="bg" id="bg"></div><div class="tex"></div>
  <canvas class="pc" id="c1"></canvas>
- <div class="cw"><div class="char" id="char">
-  <img data-i alt="Mythili's AI character">
-  <div class="head" id="head"><img class="f" data-i alt="">
-   <div class="eye l"><img data-i alt=""><div class="lid"></div></div>
-   <div class="eye r"><img data-i alt=""><div class="lid"></div></div>
+ <div class="cw">
+  <div class="char" id="char">
+   <div class="head" id="head">
+    <img src="./assets/hero-portrait.webp" alt="Mythili — Realistic 3D AI Avatar" class="avatar-img">
+   </div>
   </div>
- </div></div>
+ </div>
  <canvas class="pc" id="c2"></canvas><div class="lite"></div><div class="vig"></div>
  <div class="copy">
   <div class="hi">Hi, I'm</div>
   <h1 class="name">Mythili</h1>
   <div class="sub" id="sub"></div>
-  <p class="tag">Computer Science Engineering student building software with AI, Generative AI and full stack web technologies.</p>
-  <div class="cta" id="cta"><a class="btn w" href="#projects">View Work</a><a class="btn" href="#contact">Let's Talk</a></div>
+  <p class="tag">B.E. Computer Science Engineering student at Agni College of Technology, Chennai. Building software solutions with C, C++, Python, Data Analytics, and Full Stack technologies.</p>
+  <div class="cta" id="cta">
+   <a class="btn w" href="#projects">View Projects</a>
+   <a class="btn" href="#contact">Contact Me</a>
+  </div>
  </div>
  <div class="grain"></div>
 </header>
 
 <section class="s" id="about">
- <div class="rv"><span class="eb">About</span><h2>Building with <span class="gr">intelligence</span></h2></div>
+ <div class="rv"><span class="eb">About Me</span><h2>Building with <span class="gr">precision &amp; intelligence</span></h2></div>
  <div class="about rv">
-  <div class="glass"><p>I'm a Computer Science Engineering student specializing in Generative AI, Prompt Engineering and Full Stack Development.</p><p>I'm in my third year at Agni College of Technology, Chennai, and I'm working towards a career as a Software Engineer.</p></div>
-  <div class="focus"><div>Generative AI</div><div>Prompt Engineering</div><div>Full Stack Development</div></div>
+  <div class="glass">
+   <p>I'm a motivated and detail-oriented Computer Science Engineering student (CGPA: 7.6) at Agni College of Technology, Chennai. I have a strong academic foundation and hands-on exposure to programming languages including C, C++, and Python.</p>
+   <p>I am actively expanding my capabilities through the IBM Data Analyst Professional Certification and Cloud Computing concepts to build industry-relevant software applications and analytical platforms.</p>
+  </div>
+  <div class="focus">
+   <div>C, C++ &amp; Python</div>
+   <div>Data Analytics &amp; IBM SkillsBuild</div>
+   <div>Full Stack Web Development</div>
+  </div>
+ </div>
+</section>
+
+<section class="s" id="education">
+ <div class="rv"><span class="eb">Education</span><h2>Academic <span class="gr">foundation</span></h2></div>
+ <div class="glass rv">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px">
+   <div>
+    <h3 style="font:700 24px 'Syne',sans-serif;color:#f8fafc">Agni College of Technology, Chennai</h3>
+    <p style="font:600 16px 'Space Grotesk',sans-serif;color:#a3e635;margin:4px 0 0">Bachelor of Engineering – Computer Science Engineering (B.E. CSE)</p>
+   </div>
+   <span class="chip" style="font-weight:700;color:#a3e635;border-color:rgba(163,230,53,.3)">2024 – Present</span>
+  </div>
+  <div style="margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);display:flex;gap:20px;flex-wrap:wrap">
+   <div style="font-size:15px;color:#cbd5e1"><strong style="color:#f8fafc">CGPA:</strong> 7.6 (Semesters 1–3)</div>
+   <div style="font-size:15px;color:#cbd5e1"><strong style="color:#f8fafc">Location:</strong> Chennai, Tamil Nadu</div>
+  </div>
  </div>
 </section>
 
 <section class="s" id="skills">
- <div class="rv"><span class="eb">Skills</span><h2>Tools of the <span class="gr">craft</span></h2></div>
- <div class="skills">
-  <div class="glass rv"><h3>Frontend</h3><span class="chip">React 18</span><span class="chip">Vite</span><span class="chip">TypeScript</span><span class="chip">Tailwind CSS</span><span class="chip">Framer Motion</span><span class="chip">Bootstrap 5</span></div>
-  <div class="glass rv"><h3>Backend</h3><span class="chip">Django</span><span class="chip">Django REST Framework</span><span class="chip">FastAPI</span><span class="chip">Flask</span></div>
-  <div class="glass rv"><h3>Data &amp; ML</h3><span class="chip">XGBoost</span><span class="chip">SHAP</span><span class="chip">Generative AI</span><span class="chip">Prompt Engineering</span></div>
-  <div class="glass rv"><h3>Infra</h3><span class="chip">MySQL</span><span class="chip">Docker</span></div>
+ <div class="rv"><span class="eb">Technical Stack</span><h2>Skills &amp; <span class="gr">technologies</span></h2></div>
+ <div class="skills-grid">
+
+  <div class="glass skill-card rv">
+   <div class="skill-card-head">
+    <div class="skill-icon-badge">⚡</div>
+    <h3>Core Skills</h3>
+   </div>
+   <div class="tech-badges">
+    <span class="tech-badge">Python</span>
+    <span class="tech-badge">C</span>
+    <span class="tech-badge">C++</span>
+    <span class="tech-badge">JavaScript</span>
+    <span class="tech-badge">Computer Applications (HDCA)</span>
+   </div>
+  </div>
+
+  <div class="glass skill-card rv">
+   <div class="skill-card-head">
+    <div class="skill-icon-badge">🌐</div>
+    <h3>Technologies Used</h3>
+   </div>
+   <div class="tech-badges">
+    <span class="tech-badge">React</span>
+    <span class="tech-badge">Vite</span>
+    <span class="tech-badge">Tailwind CSS</span>
+    <span class="tech-badge">HTML5 / CSS3</span>
+    <span class="tech-badge">Flask</span>
+    <span class="tech-badge">REST APIs</span>
+    <span class="tech-badge">Generative AI</span>
+    <span class="tech-badge">Gemini / AI APIs</span>
+    <span class="tech-badge">Prompt Engineering</span>
+   </div>
+  </div>
+
+  <div class="glass skill-card rv">
+   <div class="skill-card-head">
+    <div class="skill-icon-badge">🚀</div>
+    <h3>Development Tools</h3>
+   </div>
+   <div class="tech-badges">
+    <span class="tech-badge">Git</span>
+    <span class="tech-badge">GitHub</span>
+    <span class="tech-badge">Vercel</span>
+    <span class="tech-badge">VS Code</span>
+    <span class="tech-badge">MS Office</span>
+   </div>
+  </div>
+
+  <div class="glass skill-card learning rv">
+   <div class="skill-card-head">
+    <div class="skill-icon-badge">🌱</div>
+    <h3>Currently Learning &amp; Exploring</h3>
+   </div>
+   <div class="tech-badges">
+    <span class="tech-badge learning-badge">Cloud Computing Basics (Simplilearn - 2025)</span>
+    <span class="tech-badge learning-badge">IBM Data Analyst Certificate (In Progress)</span>
+   </div>
+  </div>
+
+ </div>
+</section>
+
+<section class="s" id="certifications">
+ <div class="rv"><span class="eb">Credentials &amp; Awards</span><h2>Certifications &amp; <span class="gr">achievements</span></h2></div>
+ <div class="grid-2col">
+  <div class="glass cert-card rv">
+   <span class="meta">2025 · IN PROGRESS</span>
+   <h3>IBM Data Analyst Professional Certificate</h3>
+   <p>Issued by IBM SkillsBuild. Pursuing industry-aligned modules in data analysis, spreadsheets, and analytical tools.</p>
+  </div>
+  <div class="glass cert-card rv">
+   <span class="meta">2025 · CURRENTLY LEARNING</span>
+   <h3>Introduction to Cloud Computing</h3>
+   <p>Certified by Simplilearn. Fundamental cloud architecture concepts, deployment strategies, and cloud services.</p>
+  </div>
+  <div class="glass cert-card rv">
+   <span class="meta">2024</span>
+   <h3>Higher Diploma in Computer Applications (HDCA)</h3>
+   <p>Awarded by Bharat Sevak Samaj. Demonstrates proficiency in computer applications, programming, and software tools.</p>
+  </div>
+  <div class="glass cert-card rv">
+   <span class="meta">ACADEMIC EXCELLENCE</span>
+   <h3>CGPA 7.6 Performance</h3>
+   <p>Maintained a consistent academic record of 7.6 CGPA across Semesters 1–3 of B.E. Computer Science Engineering.</p>
+  </div>
  </div>
 </section>
 
 <section class="s" id="projects">
- <div class="rv"><span class="eb">Work</span><h2>Selected <span class="gr">projects</span></h2></div>
+ <div class="rv"><span class="eb">Featured Work</span><h2>Verified GitHub <span class="gr">projects</span></h2></div>
  <div class="proj">
-  <article class="glass rv"><span class="n">01</span><h3>PlacePilot</h3><p>AI-powered student placement preparation SaaS platform, planned through a 29-section technical blueprint, with full-stack implementation underway.</p><div><span class="chip">Django + DRF</span><span class="chip">React 18</span><span class="chip">Vite</span></div></article>
-  <article class="glass rv"><span class="n">02</span><h3>Health Risk Platform</h3><p>Full-stack health risk screening and explainability platform with a what-if simulator and PDF report generation.</p><div><span class="chip">FastAPI</span><span class="chip">XGBoost</span><span class="chip">SHAP</span><span class="chip">React</span></div></article>
-  <article class="glass rv"><span class="n">03</span><h3>BookNest</h3><p>Online bookstore application with a REST API, role-based access and Docker support.</p><div><span class="chip">Django</span><span class="chip">MySQL</span><span class="chip">DRF</span><span class="chip">Docker</span></div></article>
-  <article class="glass rv"><span class="n">04</span><h3>AI Content Creation System</h3><p>Flask app with a fully offline, template-driven content engine — 80 unique templates across four content types.</p><div><span class="chip">Flask</span><span class="chip">Python</span></div></article>
+
+  <article class="glass rv">
+   <div class="proj-head"><span class="n">01</span><span class="chip">React + Tailwind</span></div>
+   <h3>CRAVIO</h3>
+   <p>Premium Food Marketplace &amp; Restaurant Discovery Platform built with modern full-stack web technologies and interactive UI components.</p>
+   <div>
+    <span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Tailwind CSS</span>
+   </div>
+   <div class="proj-links">
+    <a href="https://github.com/Mythili-cse/CRAVIO" target="_blank" rel="noopener" class="proj-link">GitHub Repo</a>
+    <a href="https://cravio-eight.vercel.app" target="_blank" rel="noopener" class="proj-link">Live Demo</a>
+   </div>
+  </article>
+
+  <article class="glass rv">
+   <div class="proj-head"><span class="n">02</span><span class="chip">Next.js + AI</span></div>
+   <h3>CodeLens AI</h3>
+   <p>AI-powered code analysis and lens platform enabling real-time code inspection, optimization suggestions, and developer tooling.</p>
+   <div>
+    <span class="chip">TypeScript</span><span class="chip">Next.js</span><span class="chip">React</span>
+   </div>
+   <div class="proj-links">
+    <a href="https://github.com/Mythili-cse/codelens-ai" target="_blank" rel="noopener" class="proj-link">GitHub Repo</a>
+    <a href="https://codelens-ai-teal.vercel.app" target="_blank" rel="noopener" class="proj-link">Live Demo</a>
+   </div>
+  </article>
+
+  <article class="glass rv">
+   <div class="proj-head"><span class="n">03</span><span class="chip">Python + AI</span></div>
+   <h3>AI TAC Generator</h3>
+   <p>Automated AI TAC generator web application designed for intelligent document and code generation workflows.</p>
+   <div>
+    <span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Vercel</span>
+   </div>
+   <div class="proj-links">
+    <a href="https://github.com/Mythili-cse/ai-tac-generator" target="_blank" rel="noopener" class="proj-link">GitHub Repo</a>
+    <a href="https://ai-tac-generator.vercel.app" target="_blank" rel="noopener" class="proj-link">Live Demo</a>
+   </div>
+  </article>
+
+  <article class="glass rv">
+   <div class="proj-head"><span class="n">04</span><span class="chip">React App</span></div>
+   <h3>FoodieGo</h3>
+   <p>Interactive food ordering &amp; restaurant web application featuring dynamic menus, basket management, and responsive layout.</p>
+   <div>
+    <span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">CSS</span>
+   </div>
+   <div class="proj-links">
+    <a href="https://github.com/Mythili-cse/FoodieGo" target="_blank" rel="noopener" class="proj-link">GitHub Repo</a>
+    <a href="https://foodie-go-mu.vercel.app" target="_blank" rel="noopener" class="proj-link">Live Demo</a>
+   </div>
+  </article>
+
+  <article class="glass rv">
+   <div class="proj-head"><span class="n">05</span><span class="chip">Flask + Python</span></div>
+   <h3>AI Content Creation System</h3>
+   <p>Flask web application with an offline, template-driven content engine featuring 80 unique content templates across four categories.</p>
+   <div>
+    <span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Templates</span>
+   </div>
+   <div class="proj-links">
+    <a href="https://github.com/Mythili-cse/AI_Content_Creation_System" target="_blank" rel="noopener" class="proj-link">GitHub Repo</a>
+   </div>
+  </article>
+
+  <article class="glass rv">
+   <div class="proj-head"><span class="n">06</span><span class="chip">React + TypeScript</span></div>
+   <h3>KIRA AI Bootcamp Platform</h3>
+   <p>AI bootcamp solutions platform housing interactive coding challenges, web apps, and machine learning demonstrations.</p>
+   <div>
+    <span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Vite</span>
+   </div>
+   <div class="proj-links">
+    <a href="https://github.com/Mythili-cse/KIRA-AI-Bootcamp" target="_blank" rel="noopener" class="proj-link">GitHub Repo</a>
+   </div>
+  </article>
+
  </div>
 </section>
 
 <section class="s" id="ask">
- <div class="rv"><span class="eb">Interactive</span><h2>Ask <span class="gr">Mythili AI</span></h2></div>
+ <div class="rv"><span class="eb">Interactive AI</span><h2>Ask <span class="gr">Mythili AI</span></h2></div>
  <div class="glass term rv">
   <div class="th"><i></i><i></i><i></i><span>mythili.ai — verified-data console</span></div>
   <div class="log" id="log" aria-live="polite"></div>
-  <div class="qs" id="qs"><button>Who are you?</button><button>Skills</button><button>Projects</button><button>PlacePilot</button><button>Internships</button><button>Contact</button></div>
-  <form id="qf"><span>&gt;</span><input id="qi" placeholder="Ask about me, my skills or projects…" autocomplete="off"></form>
+  <div class="qs" id="qs">
+   <button>Who are you?</button>
+   <button>Education</button>
+   <button>Skills</button>
+   <button>Certifications</button>
+   <button>Projects</button>
+   <button>Contact</button>
+  </div>
+  <form id="qf"><span>&gt;</span><input id="qi" placeholder="Ask about Mythili's education, skills or GitHub projects…" autocomplete="off"></form>
  </div>
 </section>
 
 <section class="s" id="contact">
- <div class="contact rv"><span class="eb">Contact</span><h2>Let's <span class="gr">connect</span></h2>
-  <form class="glass" id="cf"><input name="n" placeholder="Your name" required><input name="e" type="email" placeholder="Your email" required><textarea name="m" rows="5" placeholder="Your message" required></textarea><button class="btn g" type="submit">Send message</button><p id="note"></p></form>
+ <div class="contact rv">
+  <span class="eb">Get In Touch</span><h2>Let's <span class="gr">connect</span></h2>
+  <div class="glass" style="margin-bottom:24px;padding:24px;text-align:center">
+   <p style="margin:0 0 10px;font-size:16px;color:#cbd5e1">Feel free to reach out for internships, collaborative projects, or software engineering opportunities!</p>
+   <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;font-family:'Space Grotesk',sans-serif;font-size:14px;color:#a3e635">
+    <a href="mailto:mythililakshmipathy16@gmail.com" style="display:inline-flex;align-items:center;gap:6px">📧 mythililakshmipathy16@gmail.com</a>
+    <a href="tel:+919789802066" style="display:inline-flex;align-items:center;gap:6px">📞 +91 9789802066</a>
+    <a href="https://github.com/Mythili-cse" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px">💻 github.com/Mythili-cse</a>
+   </div>
+  </div>
+  <form class="glass" id="cf">
+   <input name="n" placeholder="Your Name" required>
+   <input name="e" type="email" placeholder="Your Email Address" required>
+   <textarea name="m" rows="5" placeholder="Your Message" required></textarea>
+   <button class="btn g" type="submit">Send Direct Message</button>
+   <p id="note"></p>
+  </form>
  </div>
 </section>
-<footer>© <span id="yr"></span> Mythili L · Aspiring Software Engineer · AI &amp; Full Stack Developer</footer>
+
+<footer>© <span id="yr"></span> Mythili L · B.E. Computer Science Engineering Student · Agni College of Technology, Chennai</footer>
 
 <script>
-// Add your real details here; the Resume button and contact form activate once filled.
-const CONFIG={email:"",resume:""};
-const IMG="./assets/hero-portrait.webp";
+const CONFIG={email:"mythililakshmipathy16@gmail.com",resume:""};
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
-document.querySelectorAll('img[data-i]').forEach(i=>i.src=IMG);
 $('#yr').textContent=new Date().getFullYear();
-if(CONFIG.resume)$('#cta').insertAdjacentHTML('afterbegin',`<a class="btn w" href="${CONFIG.resume}" target="_blank" rel="noopener">Resume</a>`);
+
 // nav highlight + reveal
 const as=$$('nav a');
 const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)as.forEach(a=>a.classList.toggle('on',a.hash==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
 $$('section.s').forEach(s=>so.observe(s));
 const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.12});
 $$('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';ro.observe(el)});
+
 // typed subtitle
-const roles=['Aspiring Software Engineer','AI & Full Stack Developer','Generative AI','Prompt Engineering'];
+const roles=['B.E. Computer Science Student','C, C++ & Python Developer','Full Stack & AI Developer','Data Analytics Student'];
 let ri=0,ci=0,dl=false;const sb=$('#sub');
 (function t(){const w=roles[ri];ci+=dl?-1:1;sb.firstChild?sb.firstChild.nodeValue=w.slice(0,ci):sb.append(w.slice(0,ci));
  let d=dl?35:70;if(!dl&&ci===w.length){dl=true;d=1600}else if(dl&&ci===0){dl=false;ri=(ri+1)%roles.length;d=300}setTimeout(t,d)})();
+
 // card tilt
 if(matchMedia('(hover:hover)').matches)$$('.glass').forEach(c=>{
  c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(800px) rotateY(${x*5}deg) rotateX(${-y*5}deg)`});
  c.addEventListener('mouseleave',()=>c.style.transform='')});
-// character: head turns, eyes lead the gaze, cursor lights the scene, natural blinking
-const ch=$('#char'),hd=$('#head'),eyes=$$('.eye img'),eb=$$('.eye'),hero=$('#home'),bgl=$('#bg');
-const T={hx:0,hy:0,ex:0,ey:0,lx:.56,ly:.35},C={...T};let last=0;const cl=(v,m=1)=>Math.max(-m,Math.min(m,v));
+
+// Single avatar 3D head movement tracking on pointer move
+const ch=$('#char'),hd=$('#head'),hero=$('#home'),bgl=$('#bg');
+const T={hx:0,hy:0,lx:.56,ly:.35},C={...T};let last=0;const cl=(v,m=1)=>Math.max(-m,Math.min(m,v));
 addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;last=performance.now();
- const r=ch.getBoundingClientRect(),dx=e.clientX-(r.left+r.width*.5),dy=e.clientY-(r.top+r.height*.323),d=Math.hypot(dx,dy)||1,s=Math.min(1,d/260);
- T.ex=dx/d*s*2.3;T.ey=dy/d*s*1.1;T.hx=cl(dx/(innerWidth*.5));T.hy=cl(dy/(innerHeight*.5));
+ const r=ch.getBoundingClientRect(),dx=e.clientX-(r.left+r.width*.5),dy=e.clientY-(r.top+r.height*.323);
+ T.hx=cl(dx/(innerWidth*.5));T.hy=cl(dy/(innerHeight*.5));
  const h=hero.getBoundingClientRect();T.lx=cl((e.clientX-h.left)/h.width,1.2);T.ly=cl((e.clientY-h.top)/h.height,1.2)},{passive:true});
-(function idle(){if(matchMedia('(pointer:coarse)').matches||performance.now()-last>6000){const x=Math.random()*2-1,y=Math.random()*2-1;T.hx=x*.5;T.hy=y*.3;T.ex=x*1.9;T.ey=y*.9;T.lx=.56+x*.12;T.ly=.35+y*.1}setTimeout(idle,1500+Math.random()*2400)})();
-(function loop(){for(const k in T)C[k]+=(T[k]-C[k])*(k[0]==='h'||k[0]==='l'?.07:.16);
+(function idle(){if(matchMedia('(pointer:coarse)').matches||performance.now()-last>6000){const x=Math.random()*2-1,y=Math.random()*2-1;T.hx=x*.4;T.hy=y*.25;T.lx=.56+x*.12;T.ly=.35+y*.1}setTimeout(idle,1500+Math.random()*2400)})();
+(function loop(){
+ for(const k in T)C[k]+=(T[k]-C[k])*.08;
  const k=ch.offsetWidth/250;
- hd.style.transform=`perspective(1100px) rotateY(${C.hx*9}deg) rotateX(${-C.hy*5}deg) rotateZ(${C.hx*1.4}deg) translate(${C.hx*2.2*k}px,${C.hy*1.2*k}px)`;
- eyes.forEach(i=>{i.style.setProperty('--x',C.ex*k+'px');i.style.setProperty('--y',C.ey*k+'px')});
+ hd.style.transform=`perspective(1100px) rotateY(${C.hx*8}deg) rotateX(${-C.hy*4}deg) rotateZ(${C.hx*1.2}deg) translate(${C.hx*2*k}px,${C.hy*k}px)`;
  bgl.style.transform=`translate(${-C.hx*16}px,${-C.hy*9}px)`;hero.style.setProperty('--lx',C.lx*100+'%');hero.style.setProperty('--ly',C.ly*100+'%');
- requestAnimationFrame(loop)})();
-// embers: floating light particles in two depth layers
+ requestAnimationFrame(loop)
+})();
+
+// particles
 function pts(cv,n,r0,r1,al){const g=cv.getContext('2d');let W,H,P;
  const rs=()=>{W=cv.width=cv.offsetWidth;H=cv.height=cv.offsetHeight;P=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,r:r0+Math.random()*(r1-r0),v:.15+Math.random()*.4,p:Math.random()*6}))};rs();addEventListener('resize',rs);
  (function f(t){g.clearRect(0,0,W,H);P.forEach(p=>{p.y-=p.v;p.x+=Math.sin(t/2000+p.p)*.25;if(p.y<-70){p.y=H+70;p.x=Math.random()*W}
-  const gr=g.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r);gr.addColorStop(0,`rgba(255,196,150,${al})`);gr.addColorStop(1,'rgba(255,96,64,0)');g.fillStyle=gr;g.beginPath();g.arc(p.x,p.y,p.r,0,6.3);g.fill()});requestAnimationFrame(f)})(0)}
+  const gr=g.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r);gr.addColorStop(0,`rgba(241,245,249,${al})`);gr.addColorStop(0.5,`rgba(163,230,53,${al*.5})`);gr.addColorStop(1,'rgba(163,230,53,0)');g.fillStyle=gr;g.beginPath();g.arc(p.x,p.y,p.r,0,6.3);g.fill()});requestAnimationFrame(f)})(0)}
 pts($('#c1'),46,2,6,.85);pts($('#c2'),7,26,60,.2);
-function blink(){eb.forEach(e=>e.classList.add('b'));setTimeout(()=>eb.forEach(e=>e.classList.remove('b')),120)}
-(function bl(){setTimeout(()=>{blink();if(Math.random()<.2)setTimeout(blink,260);bl()},2400+Math.random()*3800)})();
-// Ask Mythili AI — answers only from verified facts
+
+// Mythili AI Console (Answers strictly from verified resume & GitHub data)
 const KB=[
- [/who|about|yourself|intro|mythili/,"I'm Mythili L — a Computer Science Engineering student in my third year at Agni College of Technology, Chennai, and an aspiring Software Engineer focused on Generative AI, Prompt Engineering and Full Stack Development.",'#about'],
- [/skill|stack|tech|tool|language|framework/,"Frontend: React 18, Vite, TypeScript, Tailwind CSS, Framer Motion, Bootstrap 5.\nBackend: Django, Django REST Framework, FastAPI, Flask.\nData & ML: XGBoost, SHAP.\nInfra: MySQL, Docker.",'#skills'],
- [/placepilot|placement/,"PlacePilot — an AI-powered student placement preparation SaaS platform. I produced a 29-section technical blueprint and began full-stack implementation with Django + DRF (11 apps) and React 18 + Vite.",'#projects'],
- [/health|risk|shap|xgboost/,"Health Risk Platform — a full-stack health risk screening and explainability platform built with FastAPI, XGBoost, SHAP and React/Vite, with a what-if simulator and PDF report generation.",'#projects'],
- [/book/,"BookNest — a Django online bookstore with MySQL, Bootstrap 5, a DRF API, role-based access and Docker support.",'#projects'],
- [/content|flask|template/,"AI Content Creation System — a Flask project upgraded into a fully offline, template-driven content engine with 80 unique templates across four content types.",'#projects'],
- [/project|built|build|work/,"I've built PlacePilot, a Health Risk Platform, BookNest and an AI Content Creation System. Ask about any of them by name.",'#projects'],
- [/intern|experience|job/,"My earlier portfolio mentions internships, but those details aren't in my verified data yet, so I won't guess.",'#ask'],
- [/contact|email|hire|reach|linkedin|github|phone/,"Public contact links aren't configured on this site yet — the contact form will work once an email is added.",'#contact'],
- [/^(hello|hi|hey)/,"Hello! Ask me about my skills, projects or background.",'#ask']];
+ [/who|about|yourself|intro|mythili/,"I'm Mythili — a B.E. Computer Science Engineering student (CGPA: 7.6, Semesters 1–3) at Agni College of Technology, Chennai. I focus on C, C++, Python, Data Analytics, and Full Stack Development.",'#about'],
+ [/edu|college|degree|cgpa|university|school/,"I am pursuing B.E. in Computer Science Engineering at Agni College of Technology, Chennai (2024–Present), maintaining a 7.6 CGPA across Semesters 1–3.",'#education'],
+ [/skill|stack|tech|tool|language/,"Core Skills: Python, C, C++, JavaScript, MS Office (HDCA).\nTechnologies Used: React, Vite, Tailwind CSS, HTML5/CSS3, Flask, REST APIs, Generative AI, Gemini API, Prompt Engineering.\nDevelopment Tools: Git, GitHub, Vercel, VS Code.\nCurrently Learning & Exploring: Cloud Computing Basics (Simplilearn - 2025), IBM Data Analyst Certificate (In Progress).",'#skills'],
+ [/certif|diploma|ibm|simplilearn|hdca/,"Certifications:\n1. IBM Data Analyst Professional Certificate – IBM SkillsBuild (In Progress)\n2. Introduction to Cloud Computing – Simplilearn (2025 - Currently Learning)\n3. Higher Diploma in Computer Applications (HDCA) – Bharat Sevak Samaj (2024)",'#certifications'],
+ [/cravio/,"CRAVIO — Premium Food Marketplace & Restaurant Discovery Platform built with TypeScript, React, and Tailwind CSS.\nGitHub: https://github.com/Mythili-cse/CRAVIO\nLive Demo: https://cravio-eight.vercel.app",'#projects'],
+ [/codelens|lens/,"CodeLens AI — AI-powered code analysis and lens tool built with TypeScript, Next.js, and React.\nGitHub: https://github.com/Mythili-cse/codelens-ai\nLive Demo: https://codelens-ai-teal.vercel.app",'#projects'],
+ [/tac|generator/,"AI TAC Generator — Automated AI TAC generator web application built with Python and Flask.\nGitHub: https://github.com/Mythili-cse/ai-tac-generator\nLive Demo: https://ai-tac-generator.vercel.app",'#projects'],
+ [/foodie/,"FoodieGo — Interactive food ordering & discovery web app built with TypeScript and React.\nGitHub: https://github.com/Mythili-cse/FoodieGo\nLive Demo: https://foodie-go-mu.vercel.app",'#projects'],
+ [/content|creation/,"AI Content Creation System — Flask web app featuring 80 unique templates across 4 content categories.\nGitHub: https://github.com/Mythili-cse/AI_Content_Creation_System",'#projects'],
+ [/project|built|build|repo|github/,"I have built 6 verified projects on GitHub including CRAVIO, CodeLens AI, AI TAC Generator, FoodieGo, AI Content Creation System, and KIRA AI Bootcamp. Visit https://github.com/Mythili-cse for all repos.",'#projects'],
+ [/contact|email|phone|reach|linkedin|location/,"Email: mythililakshmipathy16@gmail.com\nPhone: +91 9789802066\nGitHub: https://github.com/Mythili-cse\nLocation: Ennore, Chennai – 600057",'#contact'],
+ [/^(hello|hi|hey)/,"Hello! Ask me about Mythili's education, technical skills, certifications, or GitHub projects.",'#ask']
+];
+
 const log=$('#log');let busy=false;
 function say(t,c){const p=document.createElement('p');p.className=c;log.append(p);if(c==='u'){p.textContent='> '+t;log.scrollTop=1e9;return Promise.resolve()}
  return new Promise(r=>{let i=0;(function s(){p.textContent=t.slice(0,i+=2);log.scrollTop=1e9;i<t.length?setTimeout(s,12):r()})()})}
 async function ask(q){q=q.trim();if(!q||busy)return;busy=true;say(q,'u');const k=q.toLowerCase(),h=KB.find(x=>x[0].test(k));
- await say(h?h[1]:"That isn't in my verified data. Try asking about my skills, projects, background or contact.",'a');
+ await say(h?h[1]:"That question isn't in my verified resume or GitHub dataset. Try asking about education, skills, certifications, CRAVIO, CodeLens AI, or contact info.",'a');
  if(h&&h[2]!=='#ask')setTimeout(()=>$(h[2]).scrollIntoView({behavior:'smooth'}),700);busy=false}
 $$('#qs button').forEach(b=>b.onclick=()=>ask(b.textContent));
 $('#qf').onsubmit=e=>{e.preventDefault();const i=$('#qi');ask(i.value);i.value=''};
-say("Hi, I'm the Mythili AI console. I only answer from verified details. Try a suggestion below.",'a');
-// contact
-const note=$('#note');if(!CONFIG.email)note.textContent='Contact details are being set up — this form will be live soon.';
-$('#cf').onsubmit=e=>{e.preventDefault();if(!CONFIG.email){note.textContent='Contact email not configured yet — please check back soon.';return}
- const f=new FormData(e.target);location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent('Portfolio message from '+f.get('n'))}&body=${encodeURIComponent(f.get('m')+'\n\n— '+f.get('n')+' ('+f.get('e')+')')}`;note.textContent='Opening your email app…'};
+say("Hi, I'm the Mythili AI console. I answer strictly from Mythili's verified resume and GitHub data. Ask a question or try a button below.",'a');
+
+// Contact Form Handler
+const note=$('#note');
+$('#cf').onsubmit=e=>{
+ e.preventDefault();
+ const f=new FormData(e.target);
+ location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent('Portfolio Message from '+f.get('n'))}&body=${encodeURIComponent(f.get('m')+'\n\n— Sent by '+f.get('n')+' ('+f.get('e')+')')}`;
+ note.textContent='Opening your email app to send message…';
+};
 </script>
 </body>
 </html>
